@@ -1,0 +1,44 @@
+.header {
+  background: $primary-color;
+  overflow: hidden;
+  padding: 32px 64px 64px 64px;
+  border-radius: 0 0 64px 64px;
+  text-align: center;
+  h1 {
+    margin: 0 0 32px 0;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  li {
+    a {
+      padding: 16px 48px;
+      border-radius: 32px;
+      &:hover {
+        background: #fff;
+      }
+      &.active {
+        color: $primary-color;
+        background: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.main-container {
+  margin: -64px 32px 32px 32px;
+  border-radius: 64px;
+  padding: 32px;
+  background: #fff;
+  min-height: 200px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 48px;
+}
