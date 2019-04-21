@@ -35,10 +35,15 @@
   padding: 32px;
   background: #fff;
   min-height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .footer {
   text-align: center;
   font-size: 14px;
   padding: 48px;
+}
+
+.home {
+  text-align: center;
 }

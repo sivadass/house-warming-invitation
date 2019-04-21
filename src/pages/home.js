@@ -1,11 +1,17 @@
 import React from "react";
+import { withRouter } from "react-router";
 
-const Home = () => (
-  <div className="page">
-    <h1>Home</h1>
-    <p>Hi John Doe,</p>
+const getInviteeName = search => {
+  const params = new URLSearchParams(search);
+  const name = params.get("invitee");
+  return name;
+};
+
+const Home = ({ location }) => (
+  <div className="page home">
+    <h1>Hi {getInviteeName(location.search)},</h1>
     <p>
-      Sivadass s./o. Usha invite you to <b>OUR NEW HOME</b>
+      Sivadass s/o Usha, invites you and your family to <b>OUR NEW HOME</b>
     </p>
     <p>Please join us for our House warming ceremoney on</p>
     <p>
@@ -25,4 +31,4 @@ const Home = () => (
   </div>
 );
 
-export default Home;
+export default withRouter(Home);

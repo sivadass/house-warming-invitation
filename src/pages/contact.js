@@ -9,9 +9,6 @@ const Contact = () => (
     <p>
       Usha: <a href="tel:+919283224734">+91-92832-24734</a>
     </p>
-    <p>
-      Muthu Kumar: <a href="tel:+919941868691">+91-99418-68691</a>
-    </p>
   </div>
 );
 
