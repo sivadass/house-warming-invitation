@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => (
   <div className="header">
-    <h1> 🎉 Sivadass House Warming Party!</h1>
+    <h1> 🎉 House Warming Ceremony e-Invitation 🎉</h1>
     <ul className="navbar">
       <li>
         <NavLink to="/" exact={true}>
