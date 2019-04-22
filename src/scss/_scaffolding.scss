@@ -7,6 +7,18 @@
   h1 {
     margin: 0 0 32px 0;
   }
+  @media (max-width: 640px) {
+    padding: 32px 32px 64px 32px;
+    h1 {
+      font-size: 32px;
+    }
+  }
+  @media (max-width: 320px) {
+    padding: 24px 24px 48px 24px;
+    h1 {
+      font-size: 20px;
+    }
+  }
 }
 
 .navbar {
@@ -17,7 +29,9 @@
     a {
       padding: 16px 48px;
       border-radius: 32px;
+      color: #232323;
       &:hover {
+        color: $primary-color;
         background: #fff;
       }
       &.active {
@@ -27,17 +41,34 @@
       }
     }
   }
+  @media (max-width: 640px) {
+    li {
+      a {
+        padding: 16px 24px;
+      }
+    }
+  }
 }
 
 .main-container {
   margin: -64px auto 0 auto;
-  max-width: 640px;
   .page {
     border-radius: 64px;
     padding: 64px;
     background: #fff;
     min-height: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+    @media (max-width: 640px) {
+      padding: 32px;
+      margin: 0 32px;
+    }
+    @media (max-width: 640px) {
+      padding: 24px;
+      margin: 0 16px;
+    }
   }
 }
 
@@ -47,6 +78,39 @@
   padding: 32px;
 }
 
+.page-contents {
+  text-align: left;
+}
+
 .home {
   text-align: center;
+  .message {
+    font-size: 22px;
+    b {
+      color: #f1b607;
+    }
+  }
+}
+
+.separator {
+  text-align: center;
+  margin: 32px 0;
+  opacity: 0.5;
+}
+
+.decorator {
+  text-align: center;
+  margin: 0 0 32px 0;
+  opacity: 0.5;
+  &.bottom {
+    transform: scaleY(-1);
+    margin: 32px 0 0 0;
+  }
+}
+
+.actions {
+  a {
+    padding: 8px;
+    background: #232323;
+  }
 }
